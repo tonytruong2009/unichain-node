@@ -71,7 +71,17 @@ curl -d '{"id":1,"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["late
 docker logs unichain-node-op-node-1 -f
 
 ```
-5. To stop your node, run:
+
+5. Take Private_key and add to Metamask wallet
+
+```
+cat ~/unichain-node/geth-data/geth/nodekey
+
+```
+
+6. Faucet Unichain- Testnet in here : (https://thirdweb.com/unichain-sepolia-testnet)
+   
+7. To stop your node, run:
    
 ```
 docker compose down
