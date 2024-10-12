@@ -80,16 +80,12 @@ cat ~/unichain-node/geth-data/geth/nodekey
 ```
 6. Faucet Unichain Sepolia Testnet in here : (https://thirdweb.com/unichain-sepolia-testnet)
    
-7. To stop your node, run:
-   
-```
-docker compose down
 
-```
 
 #### Persisting Data
 
 By default, the data directory is stored in `${PROJECT_ROOT}/geth-data`. You can override this by modifying the value of
 `HOST_DATA_DIR` variable in the [`.env`](./.env) file.
+
 You can check RPC Gateway to Ethereum Fastest, free-est, and privacy first RPC endpoint for the Ethereum network. Connect reliably to Web3 with ease!
 link : (https://ethereum-sepolia.publicnode.com/).
