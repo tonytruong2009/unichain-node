@@ -78,8 +78,7 @@ docker logs unichain-node-op-node-1 -f
 cat ~/unichain-node/geth-data/geth/nodekey
 
 ```
-
-6. Faucet Unichain- Testnet in here : (https://thirdweb.com/unichain-sepolia-testnet)
+6. Faucet Unichain Sepolia Testnet in here : (https://thirdweb.com/unichain-sepolia-testnet)
    
 7. To stop your node, run:
    
