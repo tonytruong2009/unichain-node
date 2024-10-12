@@ -21,7 +21,41 @@ If you encounter problems with your node, please open a [GitHub issue](https://g
 2. Run:
 
 ```
+
+sudo apt update && sudo apt upgrade -y
+
+```
+
+```
+sudo apt install docker.io
+
+```
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.20.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+```
+```
+git clone https://github.com/Uniswap/unichain-node
+
+```
+```
+cd unichain-node
+nano .env.sepolia
+
+```
+Change 02 line below: 
+
+```
+OP_NODE_L1_ETH_RPC=https://ethereum-sepolia-rpc.publicnode.com
+OP_NODE_L1_BEACON=https://ethereum-sepolia-beacon-api.publicnode.com
+
+```
+
+```
 docker compose up -d
+
 ```
 
 3. You should now be able to `curl` your Unichain node:
@@ -32,9 +66,19 @@ curl -d '{"id":1,"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["late
 ```
 
 4. To stop your node, run:
+   
 ```
 docker compose down
+
 ```
+
+5. Check logs
+
+```
+docker logs unichain-node-op-node-1 -f
+
+```
+
 
 #### Persisting Data
 
