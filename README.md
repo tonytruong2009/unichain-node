@@ -65,20 +65,18 @@ curl -d '{"id":1,"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["late
   -H "Content-Type: application/json" http://localhost:8545
 ```
 
-4. To stop your node, run:
-   
-```
-docker compose down
-
-```
-
-5. Check logs
+4. Check logs
 
 ```
 docker logs unichain-node-op-node-1 -f
 
 ```
+5. To stop your node, run:
+   
+```
+docker compose down
 
+```
 
 #### Persisting Data
 
